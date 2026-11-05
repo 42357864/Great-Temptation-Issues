@@ -13,6 +13,14 @@ body:
         Thank you for helping improve the mod!
         Please provide as much information as possible.
 
+        ⚠️ **Before submitting a bug report:**
+
+        Please make sure you are using the latest
+        available version of Great Temptation: Reflections.
+
+        Some reported issues may already be fixed
+        in newer versions.
+
   - type: input
     id: mod_version
     attributes:
