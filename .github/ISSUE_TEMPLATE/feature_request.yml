@@ -1,0 +1,78 @@
+
+name: "💡 Feature Request"
+description: "Suggest a new feature or improvement for Great Temptation: Reflections."
+title: "[SUGGESTION] "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Great Temptation: Reflections
+
+        Thank you for sharing your ideas!
+
+        We appreciate community feedback and suggestions.
+        Please describe your idea as clearly as possible.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Suggestion Category"
+      description: "What area of the mod does your suggestion relate to?"
+      options:
+        - Gameplay
+        - Items and Blocks
+        - Entities
+        - Animations
+        - Visuals and Effects
+        - User Interface
+        - Performance and Optimization
+        - Compatibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Is your suggestion related to a problem?"
+      description: "Describe the problem or limitation you would like to solve."
+      placeholder: "I would like to see this feature because..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Describe Your Suggestion"
+      description: "Explain how you imagine this feature working."
+      placeholder: "I would like the mod to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: "Purpose and Benefits"
+      description: "How would this feature improve the mod?"
+      placeholder: "This feature would make..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternative Solutions"
+      description: "Have you considered any alternative ways to achieve the same result?"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Attach images, references, examples or other relevant materials."
+    validations:
+      required: false
