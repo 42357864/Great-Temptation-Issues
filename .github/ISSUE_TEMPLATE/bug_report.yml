@@ -1,0 +1,119 @@
+name: "🐛 Bug Report"
+description: "Report a bug or unexpected behavior in Great Temptation: Reflections."
+title: "[BUG] "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Great Temptation: Reflections
+
+        Thank you for helping improve the mod!
+        Please provide as much information as possible.
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: "Mod Version"
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft_version
+    attributes:
+      label: "Minecraft Version"
+      placeholder: "e.g. 1.21.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_loader
+    attributes:
+      label: "Mod Loader"
+      options:
+        - Forge
+        - NeoForge
+        - Fabric
+        - Quilt
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: loader_version
+    attributes:
+      label: "Mod Loader Version"
+      placeholder: "e.g. Forge 52.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Game Environment"
+      options:
+        - Singleplayer
+        - Multiplayer (Client)
+        - Multiplayer (Server)
+        - Dedicated Server
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description"
+      description: "Describe what happened."
+      placeholder: "Explain the issue in detail..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to Reproduce"
+      description: "How can this issue be reproduced?"
+      placeholder: |
+        1. Launch Minecraft.
+        2. Perform a specific action.
+        3. The issue occurs.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What did you expect to happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mods
+    attributes:
+      label: "Other Installed Mods"
+      description: "List other mods installed alongside Great Temptation: Reflections."
+      placeholder: "e.g. Create, GeckoLib..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs and Crash Reports"
+      description: |
+        Attach latest.log or a crash report if available.
+        Please use file attachments instead of screenshots of log text.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Information"
+      description: "Attach screenshots, videos or any other relevant information."
+    validations:
+      required: false
